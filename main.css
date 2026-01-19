@@ -88,11 +88,12 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
+/*left-side design*/
 .left-side {
     background: var(--Navy-900);
     width: 255px;
     border-radius: 15px;
+    margin-right: 32px;
 }
 
 .report-for {
@@ -121,7 +122,90 @@ body {
     margin:32px;
     color: var(--Purple-500);
     line-height: 32px;
-    padding-bottom: 32px;
-   
+    padding-bottom: 32px;  
 }
+
+/*right-side design*/
+.time-tracking-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(244px, auto);
+    gap: 32px;
+}
+
+.time-tracking-card__toprow--work {
+    background: var(--Orange300-work);
+    width: 255px;
+}
+
+.time-tracking-card__toprow--play {
+    background: var(--Blue300-play);
+    width: 255px;
+}
+
+.time-tracking-card__toprow--study {
+    background: var(--Pink400-study);
+    width: 255px;
+}
+
+.time-tracking-card__bottomrow--exercise {
+    background: var(--Green400-exercise);
+    width: 255px;
+}
+
+.time-tracking-card__bottomrow--social {
+    background: var(--Purple700-social);
+    width: 255px;
+}
+
+.time-tracking-card__bottomrow--selfcare {
+    background: var(--Yellow300-selfcare);
+    width: 255px;
+}
+
+/*time-tracking grid image sizes*/
+.time-tracking-card__toprow--work img {
+    display: block;
+    margin-left: 159.58px;
+    margin-top: -10.91;
+    width: 78px;
+    height: 78px;
+}
+
+.time-tracking-card__toprow--play img {
+    display: block;
+    margin-left: 154px;
+    margin-top: -14.4px;
+    width: 90px;
+    height: 90px;
+}
+
+.time-tracking-card__toprow--study img {
+    width: 78px;
+    height: 78px;
+}
+
+.time-tracking-card__bottomrow--exercise img {
+    width: 79.65px;
+    height: 53.48px;
+}
+
+.time-tracking-card__bottomrow--social img {
+    width: 73.6px;
+    height: 100px;
+}
+
+.time-tracking-card__bottomrow--selfcare img {
+    width: 72px;
+    height: 66px;
+}
+
+.time-tracking-cards img {
+    
+
+
+}
+
+
+
 
