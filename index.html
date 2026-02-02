@@ -4,20 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
-
   <title>Frontend Mentor | Time tracking dashboard solution</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
     }
-
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
@@ -42,49 +36,96 @@
 
       <section class="right-side">
         <div class="time-tracking-cards">
-          
-            <div class="time-tracking-card__toprow--work">
-              <div class="time-tracking-card__toprow--work--icon--container">
-                <img src="images/icon-work.svg" alt="Work Icon" class="time-tracking-card__toprow--work--icon--container--icon">
-              </div>
-             
-
-
-              <div class="time-tracking-card__toprow--work--data">
-                <div class="time-tracking-card__toprow--work--data--title--container">
+          <!-- WORK CARD -->
+          <div class="time-tracking-card__toprow--work">
+            <div class="time-tracking-card__toprow--work--icon--container">
+              <img src="images/icon-work.svg" alt="Work Icon" class="time-tracking-card__toprow--work--icon--container--icon">
+            </div>
+            <div class="time-tracking-card__toprow--work--data">
+              <div class="time-tracking-card__toprow--work--data--title--container">
                 <p class="time-tracking-card__toprow--work--data--title">Work</p>
-                <img src="images/icon-ellipsis.svg" class="time-tracking-card__toprow--work--data--title--ellipsis">
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__toprow--work--data--title--ellipsis" alt="Options menu">
               </div>
-                
-                <p class="time-tracking-card__toprow--work--data--hours">32hrs</p><br>
-                <p class="time-tracking-card__toprow--work--data--title--previoushours">Last Week - 36hrs</p>
+              <p class="time-tracking-card__toprow--work--data--hours">32hrs</p>
+              <p class="time-tracking-card__toprow--work--data--title--previoushours">Last Week - 36hrs</p>
+            </div>
+          </div>
+
+          <!-- PLAY CARD -->
+          <div class="time-tracking-card__toprow--play">
+            <div class="time-tracking-card__toprow--play--icon--container">
+              <img src="images/icon-play.svg" alt="Play Icon" class="time-tracking-card__toprow--play--icon--container--icon">
+            </div>
+            <div class="time-tracking-card__toprow--play--data">
+              <div class="time-tracking-card__toprow--play--data--title--container">
+                <p class="time-tracking-card__toprow--play--data--title">Play</p>
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__toprow--play--data--title--ellipsis" alt="Options menu">
               </div>
+              <p class="time-tracking-card__toprow--play--data--hours">10hrs</p>
+              <p class="time-tracking-card__toprow--play--data--title--previoushours">Last Week - 8hrs</p>
             </div>
+          </div>
 
-            <div class="time-tracking-card__toprow--play">
-              <img src="images/icon-play.svg" alt="Play Icon">
+          <!-- STUDY CARD -->
+          <div class="time-tracking-card__toprow--study">
+            <div class="time-tracking-card__toprow--study--icon--container">
+              <img src="images/icon-study.svg" alt="Study Icon" class="time-tracking-card__toprow--study--icon--container--icon">
             </div>
-
-            <div class="time-tracking-card__toprow--study">
-              <img src="images/icon-study.svg" alt="Study Icon">
+            <div class="time-tracking-card__toprow--study--data">
+              <div class="time-tracking-card__toprow--study--data--title--container">
+                <p class="time-tracking-card__toprow--study--data--title">Study</p>
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__toprow--study--data--title--ellipsis" alt="Options menu">
+              </div>
+              <p class="time-tracking-card__toprow--study--data--hours">4hrs</p>
+              <p class="time-tracking-card__toprow--study--data--title--previoushours">Last Week - 7hrs</p>
             </div>
-          
-        
+          </div>
 
-        
+          <!-- EXERCISE CARD -->
           <div class="time-tracking-card__bottomrow--exercise">
-            <img src="images/icon-exercise.svg" alt="Exercise Icon">
+            <div class="time-tracking-card__bottomrow--exercise--icon--container">
+              <img src="images/icon-exercise.svg" alt="Exercise Icon" class="time-tracking-card__bottomrow--exercise--icon--container--icon">
+            </div>
+            <div class="time-tracking-card__bottomrow--exercise--data">
+              <div class="time-tracking-card__bottomrow--exercise--data--title--container">
+                <p class="time-tracking-card__bottomrow--exercise--data--title">Exercise</p>
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__bottomrow--exercise--data--title--ellipsis" alt="Options menu">
+              </div>
+              <p class="time-tracking-card__bottomrow--exercise--data--hours">4hrs</p>
+              <p class="time-tracking-card__bottomrow--exercise--data--title--previoushours">Last Week - 5hrs</p>
+            </div>
           </div>
 
+          <!-- SOCIAL CARD -->
           <div class="time-tracking-card__bottomrow--social">
-            <img src="images/icon-social.svg" alt="Social Icon">
+            <div class="time-tracking-card__bottomrow--social--icon--container">
+              <img src="images/icon-social.svg" alt="Social Icon" class="time-tracking-card__bottomrow--social--icon--container--icon">
+            </div>
+            <div class="time-tracking-card__bottomrow--social--data">
+              <div class="time-tracking-card__bottomrow--social--data--title--container">
+                <p class="time-tracking-card__bottomrow--social--data--title">Social</p>
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__bottomrow--social--data--title--ellipsis" alt="Options menu">
+              </div>
+              <p class="time-tracking-card__bottomrow--social--data--hours">5hrs</p>
+              <p class="time-tracking-card__bottomrow--social--data--title--previoushours">Last Week - 10hrs</p>
+            </div>
           </div>
 
+          <!-- SELF CARE CARD -->
           <div class="time-tracking-card__bottomrow--selfcare">
-            <img src="images/icon-self-care.svg" alt="Self Care Icon">
+            <div class="time-tracking-card__bottomrow--selfcare--icon--container">
+              <img src="images/icon-self-care.svg" alt="Self Care Icon" class="time-tracking-card__bottomrow--selfcare--icon--container--icon">
+            </div>
+            <div class="time-tracking-card__bottomrow--selfcare--data">
+              <div class="time-tracking-card__bottomrow--selfcare--data--title--container">
+                <p class="time-tracking-card__bottomrow--selfcare--data--title">Self Care</p>
+                <img src="images/icon-ellipsis.svg" class="time-tracking-card__bottomrow--selfcare--data--title--ellipsis" alt="Options menu">
+              </div>
+              <p class="time-tracking-card__bottomrow--selfcare--data--hours">2hrs</p>
+              <p class="time-tracking-card__bottomrow--selfcare--data--title--previoushours">Last Week - 2hrs</p>
+            </div>
           </div>
-        
-      </div>
+        </div>
       </section>
     </div>
   </main>
@@ -94,5 +135,4 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
-
 </html>
