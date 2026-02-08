@@ -92,7 +92,7 @@ body {
 
 .report-for {
     background: var(--Purple-600);
-    padding: 32px 32px 133px 32px;
+    padding: 32px 32px 70px 32px;
     border-radius: 15px;
 }
 
@@ -113,10 +113,10 @@ body {
 }
 
 .report-timeframes {
-    margin: 32px;
+    padding: 25px 32px;
     color: var(--Purple-500);
     line-height: 32px;
-    padding-bottom: 32px;  
+    
 }
 
 /* Right Side Design */
@@ -286,6 +286,14 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: var(--Navy-200);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--Navy-200);
+    padding: 20px;
 }
 
 /* Start of The Media Queries */
