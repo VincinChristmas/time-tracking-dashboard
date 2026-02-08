@@ -289,11 +289,17 @@ body {
 }
 
 .attribution {
-    text-align: center;
-    margin-top: 40px;
+    display: flex;                
+    justify-content: center;      
+    align-items: center;   
+    gap: 10px;              
+    text-align: center;           
     font-size: 14px;
     color: var(--Navy-200);
     padding: 20px;
+    line-height: 1.5;
+    width: 100%;                  /* Full width */
+    margin-top: 40px;
 }
 
 /* Start of The Media Queries */
@@ -330,8 +336,15 @@ body {
 
 /* Mobile (375px - 767px) */
 @media (max-width: 768px) {
+    
+
     body {
         padding: 20px;
+    }
+
+    .attribution {
+        flex-direction: column;
+        
     }
 
     
