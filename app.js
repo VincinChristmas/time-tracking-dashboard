@@ -21,6 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
          // Loop through each item in the JSON data
          dashboardData.forEach(item => {
             // Get the current and previous hours for this timeframe
+            const currentHours = item.timeframes[timeframe].current;
+            const previousHours = item.timeframes[timeframe].previous;
+
+            // Set the text for "Yesterday", "Last Week", or "Last Month"
+            let periodText = '';
+            if (timeframe === 'daily') {
+                periodText = 'Yesterday';
+            }
+            else if (timeframe === 'weekly') {
+                periodText = 'Last Week';     
+            }
+            else if (timeframe === 'monthly') {
+                periodText = 'Last Month';
+            }
+
+          // Update each card based on its title
+            
+
 
          })
 
