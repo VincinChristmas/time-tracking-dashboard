@@ -334,6 +334,71 @@ body {
     }
 }
 
+
+/* Hover effect for timeframes buttons */
+.report-timeframes p {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.report-timeframes p:hover {
+    color: white;
+}
+
+/* Active state for selected timeframe */
+.report-timeframes p.active {
+    color: white;
+}
+
+/* Hover effect for data sections (cards) */
+.time-tracking-card__toprow--work--data,
+.time-tracking-card__toprow--play--data,
+.time-tracking-card__toprow--study--data,
+.time-tracking-card__bottomrow--exercise--data,
+.time-tracking-card__bottomrow--social--data,
+.time-tracking-card__bottomrow--selfcare--data {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.time-tracking-card__toprow--work--data:hover,
+.time-tracking-card__toprow--play--data:hover,
+.time-tracking-card__toprow--study--data:hover,
+.time-tracking-card__bottomrow--exercise--data:hover,
+.time-tracking-card__bottomrow--social--data:hover,
+.time-tracking-card__bottomrow--selfcare--data:hover {
+    background-color: hsl(235, 46%, 25%); /* Slightly lighter than --Navy-900 */
+    transform: translateY(-5px);
+}
+
+/* Hover effect for ellipsis icon */
+.time-tracking-card__toprow--work--data--title--ellipsis,
+.time-tracking-card__toprow--play--data--title--ellipsis,
+.time-tracking-card__toprow--study--data--title--ellipsis,
+.time-tracking-card__bottomrow--exercise--data--title--ellipsis,
+.time-tracking-card__bottomrow--social--data--title--ellipsis,
+.time-tracking-card__bottomrow--selfcare--data--title--ellipsis {
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.time-tracking-card__toprow--work--data--title--ellipsis:hover,
+.time-tracking-card__toprow--play--data--title--ellipsis:hover,
+.time-tracking-card__toprow--study--data--title--ellipsis:hover,
+.time-tracking-card__bottomrow--exercise--data--title--ellipsis:hover,
+.time-tracking-card__bottomrow--social--data--title--ellipsis:hover,
+.time-tracking-card__bottomrow--selfcare--data--title--ellipsis:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
+/* Optional: Add focus states for accessibility */
+.report-timeframes p:focus,
+.time-tracking-card__toprow--work--data:focus,
+.time-tracking-card__toprow--play--data:focus {
+    outline: 2px solid var(--Navy-200);
+    outline-offset: 2px;
+}
+
 /* Mobile (375px - 767px) */
 @media (max-width: 768px) {
     
